@@ -11,12 +11,11 @@ let mainWindow
 
 function createMainWindow() {
   mainWindow = new BrowserWindow({
-    title: 'APP NAME',
-    width: isDev ? 800 : 500,
-    height: 600,
+    title: 'SysTop',
+    width: isDev ? 720 : 360,
+    height: 500,
     icon: './assets/icons/icon.png',
-    resizable: isDev ? true : false,
-    backgroundColor: 'white',
+    resizable: isDev,
     webPreferences: {
       nodeIntegration: true,
     },
