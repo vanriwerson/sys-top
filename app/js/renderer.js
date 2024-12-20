@@ -1,6 +1,6 @@
-const { ipcRenderer } = require('electron')
 const settingsForm = document.getElementById('settings-form')
 
+// Não foi necessário declarar o ipcRenderer aqui pois já esta declarado no arquivo monitor.js
 ipcRenderer.on('settings:get', (e, settings) => {
   document.getElementById('cpu-overload').value = settings.cpuOverload
   document.getElementById('alert-frequency').value = settings.alertFrequency
