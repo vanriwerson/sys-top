@@ -108,6 +108,7 @@ nav ul li p {
 
 .alert {
 	text-align: center;
+	margin-top: 15px;
 	padding: 5px;
 	color: orange;
 	border: orange 1px solid;
